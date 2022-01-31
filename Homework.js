@@ -129,7 +129,7 @@ console.log(word1)
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
-print('EX-5')   //not done yet
+print('EX-5')   //NOT DONE YET
 
 
 /*word = 'I have 6 guitars'
@@ -152,32 +152,32 @@ console.log(word)
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
-print('EX-6') // not done yet
+print('EX-6') // NOT DONE YET 
 let email = 'claudio@hotmail.com' 
 
 
 
 
-ValidateEmail(email)
+
 console.log(email)
 
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
 */
 
-print('EX-7')  //not done yet//
-let day = ''
+print('EX-7')  //NOT DONE YET 
+let day 
 
-function whatDayIsIt(d) {
-  let result
+function whatDayIsIt() {
+  let result = new Date()
   
   return result
 
 
   
 }
-whatDayIsIt(day)
-console.log(day)
+
+console.log(whatDayIsIt(day))
 
 /* EXERCISE 8
     Write a function called rollTheDices which receives a number as a parameter.
@@ -197,6 +197,21 @@ console.log(day)
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
 */
+print('EX-10')
+micumpleaño = new Date(1994,06,28) //wrong dates &&  month  on bash
+hoy = new Date()
+function  isTodayMyBirthday(t) {
+
+  if (t === hoy) {
+    return true
+
+  }else {
+    return false
+  }
+}
+isTodayMyBirthday(hoy)
+console.log(isTodayMyBirthday(hoy))
+console.log(isTodayMyBirthday(micumpleaño))
 
 // JS Arrays & Objects
 // NOTE: the movies array used in some exercises is defined at the end of this file
