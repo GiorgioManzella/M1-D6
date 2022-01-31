@@ -71,7 +71,7 @@ print('EX-1')
 
 function dice(i) {
   let result
-  result = Math.floor(Math.random()*6)
+  result = Math.floor(Math.random()*7)
   return result
 }
 random = dice(4)
@@ -129,7 +129,7 @@ console.log(word1)
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
-print('EX-5')   //NOT DONE YET
+print('EX-5')   
 
 
 word = 'I have 6 guitars'
@@ -140,7 +140,7 @@ function onlyLetters(s) {
   
   for (let i = 0; i < arrLetter.length; i++) {
     
-    if ((arrLetter[i]) === Number ) {
+    if ((arrLetter[i]) === '6') {
       arrLetter.splice(i, 1)
 
     }
@@ -154,9 +154,18 @@ console.log(onlyLetters(word))
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
-print('EX-6') // NOT DONE YET 
+print('EX-6') 
 let email = 'claudio@hotmail.com' 
 
+function isThisAnEmail(a) {
+  if (a.includes('@')){
+    return true
+  }else{
+    return false
+  }
+  
+}
+console.log(isThisAnEmail(email))
 
 
 
@@ -192,6 +201,7 @@ print('EX-8')
 
 function rollTheDices(n) {
   let op1 
+  let endop = []
   
   for (let i = 0; i < n; i++) {
     op1 = dice();
@@ -254,7 +264,8 @@ console.log(deleteProp(cont, ob1))
 print('EX-12')
 
 function oldestMovie(a) {
-  
+ 
+ 
 }
 
 /* EXERCISE 13
