@@ -212,7 +212,7 @@ console.log(rollTheDices(7))
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
 */
 print('EX-10')
-micumpleaño = new Date(1994,06,28) //wrong dates &&  month  on bash
+micumpleaño = new Date(1994,06,28) //wrong dates &&  month  on bash // bug
 hoy = new Date()
 function  isTodayMyBirthday(t) {
 
@@ -225,7 +225,7 @@ function  isTodayMyBirthday(t) {
 }
 isTodayMyBirthday(hoy)
 console.log(isTodayMyBirthday(hoy))
-console.log(isTodayMyBirthday(micumpleaño))
+
 
 // JS Arrays & Objects
 // NOTE: the movies array used in some exercises is defined at the end of this file
