@@ -69,12 +69,12 @@ console.log (me)
 */
 print('EX-1')
 
-function randomN(i) {
+function dice(i) {
   let result
   result = Math.floor(Math.random()*6)
   return result
 }
-random = randomN(4)
+random = dice(4)
 console.log(random)
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
@@ -132,23 +132,25 @@ console.log(word1)
 print('EX-5')   //NOT DONE YET
 
 
-/*word = 'I have 6 guitars'
+word = 'I have 6 guitars'
 let arrLetter 
 function onlyLetters(s) {
   let result
   arrLetter = s.split(" ")
   
   for (let i = 0; i < arrLetter.length; i++) {
-    const element = arrLetter[i];
-    arrLetter.filter()
     
+    if ((arrLetter[i]) === Number ) {
+      arrLetter.splice(i, 1)
+
+    }
   }
-  
-  result   
+  result = arrLetter.join(' ')
+  return result  
 }
-onlyLetters(word)
-console.log(word)
-*/
+
+console.log(onlyLetters(word))
+//console.log(Number())
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
@@ -159,7 +161,7 @@ let email = 'claudio@hotmail.com'
 
 
 
-console.log(email)
+
 
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
@@ -169,14 +171,9 @@ print('EX-7')
 let day 
 
 function whatDayIsIt() {
-  let result = new Date()
-  
+  let result = new Date() 
   return result
-
-
-  
 }
-
 console.log(whatDayIsIt(day))
 
 /* EXERCISE 8
@@ -189,6 +186,23 @@ console.log(whatDayIsIt(day))
         values: [3, 3, 4]
     }
 */
+
+print('EX-8')
+ 
+
+function rollTheDices(n) {
+  let op1 
+  
+  for (let i = 0; i < n; i++) {
+    op1 = dice();
+    
+  }
+  let sum = op1
+  
+  return op1 
+  
+}
+console.log(rollTheDices(7))
 
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
@@ -221,9 +235,27 @@ console.log(isTodayMyBirthday(micumpleaño))
    and returns the given object after deleting its property named as the given string.
 */
 
+print('EX-11')
+
+let cont = { 'casa':'', 'car':'', 'insurance':''}
+let ob1 = 'insurance'
+
+function deleteProp(l1, l2 ) {
+  let result
+  delete l1[l2]
+  result = l1
+  return result
+}
+console.log(deleteProp(cont, ob1))
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
+
+print('EX-12')
+
+function oldestMovie(a) {
+  
+}
 
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
