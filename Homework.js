@@ -165,7 +165,7 @@ console.log(email)
    Write a function called whatDayIsIt that should return the current day of the week.
 */
 
-print('EX-7')  //NOT DONE YET 
+print('EX-7')  
 let day 
 
 function whatDayIsIt() {
