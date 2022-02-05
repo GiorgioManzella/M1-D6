@@ -387,6 +387,7 @@ function oldestMovie(a) {
   for (let i = 0; i < array.length; index++) {
     const element = array[index];
     
+    
   }
 
  
@@ -396,6 +397,16 @@ function oldestMovie(a) {
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
+
+function countMovies() {
+
+  for (i=0; i <= movies.length; i++) {
+    let result
+    result += i
+  }
+
+}
+
 
 /* EXERCISE 14
     Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
